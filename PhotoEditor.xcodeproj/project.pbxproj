@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9429D082901BF84005403B2 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9429D072901BF84005403B2 /* Binder.swift */; };
 		D96DBC6D28FF4AF6008FF43B /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBC6C28FF4AF6008FF43B /* EditorViewModel.swift */; };
 		D978FC3828FF3A110047AB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978FC3728FF3A110047AB96 /* AppDelegate.swift */; };
 		D978FC3A28FF3A110047AB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978FC3928FF3A110047AB96 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9429D072901BF84005403B2 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		D96DBC6C28FF4AF6008FF43B /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		D978FC3428FF3A110047AB96 /* PhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D978FC3728FF3A110047AB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9429D062901BEEE005403B2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9429D072901BF84005403B2 /* Binder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D978FC2B28FF3A110047AB96 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 				D978FC4D28FF3C530047AB96 /* App */,
 				D978FC5B28FF455B0047AB96 /* Coordinators */,
 				D978FC4E28FF3C610047AB96 /* Scenes */,
+				D9429D062901BEEE005403B2 /* Utilities */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 				D9B7A1B72900A95C0052CA2B /* GalleryViewController.swift in Sources */,
 				D9B7A1B92900A9970052CA2B /* GalleryViewModel.swift in Sources */,
 				D9B7A1AF2900A4D90052CA2B /* EditorFlow.swift in Sources */,
+				D9429D082901BF84005403B2 /* Binder.swift in Sources */,
 				D9B7A1B32900A8B20052CA2B /* GalleryFlow.swift in Sources */,
 				D978FC5E28FF45800047AB96 /* Coordinator.swift in Sources */,
 				D978FC3C28FF3A110047AB96 /* EditorViewController.swift in Sources */,
