@@ -9,4 +9,8 @@ import Foundation
 
 class GalleryViewModel {
     
+    // MARK: - Binding properties
+    
+    let itemsPerRow = Binder(GalleryViewController.Metrics.itemsPerRow)
+    let minimumItemSpacing = Binder(GalleryViewController.Metrics.minimumItemSpacing)
 }

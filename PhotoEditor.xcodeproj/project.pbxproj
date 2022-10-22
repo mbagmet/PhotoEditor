@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9429D082901BF84005403B2 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9429D072901BF84005403B2 /* Binder.swift */; };
+		D9429D0D2901DEAC005403B2 /* GalleryViewControllerConstants+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9429D0C2901DEAC005403B2 /* GalleryViewControllerConstants+Ext.swift */; };
 		D96DBC6D28FF4AF6008FF43B /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DBC6C28FF4AF6008FF43B /* EditorViewModel.swift */; };
 		D978FC3828FF3A110047AB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978FC3728FF3A110047AB96 /* AppDelegate.swift */; };
 		D978FC3A28FF3A110047AB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978FC3928FF3A110047AB96 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		D9429D072901BF84005403B2 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		D9429D0C2901DEAC005403B2 /* GalleryViewControllerConstants+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewControllerConstants+Ext.swift"; sourceTree = "<group>"; };
 		D96DBC6C28FF4AF6008FF43B /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		D978FC3428FF3A110047AB96 /* PhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D978FC3728FF3A110047AB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 				D9429D072901BF84005403B2 /* Binder.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D9429D092901DD6D005403B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9429D0C2901DEAC005403B2 /* GalleryViewControllerConstants+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D978FC2B28FF3A110047AB96 = {
@@ -193,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B7A1B62900A95C0052CA2B /* GalleryViewController.swift */,
+				D9429D092901DD6D005403B2 /* Extensions */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +334,7 @@
 				D9B7A1B32900A8B20052CA2B /* GalleryFlow.swift in Sources */,
 				D978FC5E28FF45800047AB96 /* Coordinator.swift in Sources */,
 				D978FC3C28FF3A110047AB96 /* EditorViewController.swift in Sources */,
+				D9429D0D2901DEAC005403B2 /* GalleryViewControllerConstants+Ext.swift in Sources */,
 				D978FC6028FF45B30047AB96 /* AppCoordinator.swift in Sources */,
 				D9B7A1B52900A8E50052CA2B /* GalleryCoordinator.swift in Sources */,
 				D96DBC6D28FF4AF6008FF43B /* EditorViewModel.swift in Sources */,
