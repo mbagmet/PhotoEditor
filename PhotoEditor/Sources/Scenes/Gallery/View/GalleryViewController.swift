@@ -57,7 +57,8 @@ class GalleryViewController: UIViewController {
     }
     
     private func registerCells() {
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
+        collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier)
+        collectionView.register(VideoCollectionViewCell.self, forCellWithReuseIdentifier: VideoCollectionViewCell.identifierVideo)
     }
     
     // MARK: - Bindings
@@ -108,8 +109,14 @@ extension GalleryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellid", for: indexPath)
-        cell.backgroundColor = .systemYellow
+        
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as! PhotoCollectionViewCell
+        
+        if indexPath.row % 5 == 0 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.identifierVideo, for: indexPath) as! VideoCollectionViewCell
+        }
+        
+        //cell.backgroundColor = .systemYellow
 
 //        let item = sections[indexPath.item]
 //        cell.configureCell(with: item)
