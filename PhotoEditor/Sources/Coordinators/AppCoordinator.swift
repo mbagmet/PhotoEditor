@@ -22,7 +22,10 @@ class AppCoordinator: Coordinator {
     // MARK: - Methods
     
     func start() {
-        let editorCoordinator = EditorCoordinator(navigationController: navigationController)
-        coordinate(to: editorCoordinator)
+        let galleryCoordinator = GalleryCoordinator(navigationController: navigationController)
+        coordinate(to: galleryCoordinator)
+        
+//        let editorCoordinator = EditorCoordinator(navigationController: navigationController)
+//        coordinate(to: editorCoordinator)
     }
 }
